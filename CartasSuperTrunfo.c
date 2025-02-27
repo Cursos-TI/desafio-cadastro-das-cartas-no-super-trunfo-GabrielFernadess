@@ -15,6 +15,7 @@ int main() {
         float area;
         float pib;
         int pontosturisticos;
+        float densidade, pibpercapta;
  
         char estado2[50];
         char cidade2[50];
@@ -23,7 +24,7 @@ int main() {
         float area2;
         float pib2;
         int pontosturisticos2;
- 
+        float densidade2, pibpercapta2;
  
         printf("Bem vindo ao Super Trunfo: \n");
         printf("Insira corretamente cada dado necessario para suas cartas: \n");
@@ -52,6 +53,12 @@ int main() {
         printf("nome do estado: %s - cidade: %s - codigo: %d - populacao %d:", estado, cidade, codigo, populacao);
         printf("area: %f - pib: %f - pontosturisticos: %d: \n", area, pib, pontosturisticos);
  
+        
+       densidade=populacao/area;
+       printf("o quociente de populacao/area: %f\n,:densidade");
+       pibpercapta=pib/populacao;
+       printf("o quociente de pib/area: %f\n,:pibpercapta");
+
        //iniciante em programção, o desafio era criar duas cartas,perdão pelo código feio kkkk
  
         printf("Digite o nome do estado: \n");
@@ -78,6 +85,13 @@ int main() {
  
         printf("nome do estado: %s - cidade: %s - codigo: %d - populacao %d", estado2, cidade2, codigo2, populacao2);
         printf("area: %f - pib: %f - pontosturisticos: %d", area2, pib2, pontosturisticos2);
+
+          
+       densidade2=populacao/area;
+       printf("o quociente de populacao/area: %f\n,:densidade2");
+       pibpercapta2=pib/populacao;
+       printf("o quociente de pib/area: %f\n,:pibpercapta2");
+
  
         return 0;
  
